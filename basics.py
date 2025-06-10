@@ -31,7 +31,7 @@ x = 'we may use single quotes'
 y = "or we may use double - (Python istelf does not care)"
 # we often use the triple quortes for docstring (__doc__)
 z = '''we can even use triple quotes
-which alow new lines witbin a string'''
+which alow new lines within a string'''
 zz= """or triple double quotes 
 - really Python does not care"""
 
@@ -62,3 +62,8 @@ t = (6,5,4,2,55.5, x, l, True) # an immutable ordinal collection of any data typ
 print( t, type(t), t[3:6] )
 
 # we may iterate over any ordinal collection
+for i in l:
+    print(i)
+
+for i in t:
+    print(i)
