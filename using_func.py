@@ -11,12 +11,6 @@ def checkOddEven(n): # we define a function, optionally pass in arguments
     else:
         return 'NaN' # functions do have to return anything but you may
     
-# we may exercise the code
-print( checkOddEven(4) )   # Even
-print( checkOddEven(3) )   # Odd
-print( checkOddEven('4') ) # NaN
-
-
 # another function: validate user input as an integer
 def checkInt(): # we may choose to take no arguments intp the function
     '''ask the user to enter a value (which will be a string)
@@ -30,7 +24,14 @@ def checkInt(): # we may choose to take no arguments intp the function
         return 0
  
 # the following line is very common in Python. It is really useful with imports
-if __name__ == '__main__':  
+if __name__ == '__main__': 
+    '''The following lines only run if this module is executed directly
+    They do not run if this module is imported elsewhere'''
+    # we may exercise the code
+    print( checkOddEven(4) )   # Even
+    print( checkOddEven(3) )   # Odd
+    print( checkOddEven('4') ) # NaN
+ 
     # exercise the code
     result = checkInt()
     print( result )

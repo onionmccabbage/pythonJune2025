@@ -7,4 +7,5 @@ def stateTemperature():
     return f'The temperature is {t} degrees'
 
 if __name__ == '__main__':
-    stateTemperature()
+    s = stateTemperature()
+    print(s)
