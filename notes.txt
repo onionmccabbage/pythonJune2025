@@ -2,11 +2,6 @@ Python Introduction
 
 June 10-12 2025
 
-Python Introduction
-===================
-
-March 10-12 2025
-
 Toby Dussek
 
 9:30 start
@@ -16,7 +11,7 @@ Toby Dussek
 4:30 end
 
 All my code will be here:
-Mondayhttps://github.com/onionmccabbage/pythonJune2025
+  https://github.com/onionmccabbage/pythonJune2025
 
 Tuesday
 - Welcome and intros
