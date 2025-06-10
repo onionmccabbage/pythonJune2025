@@ -28,8 +28,10 @@ def checkInt(): # we may choose to take no arguments intp the function
         return i
     else:
         return 0
-    
-# exercise the code
-result = checkInt()
-print( result )
+ 
+# the following line is very common in Python. It is really useful with imports
+if __name__ == '__main__':  
+    # exercise the code
+    result = checkInt()
+    print( result )
     
