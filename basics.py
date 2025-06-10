@@ -42,3 +42,23 @@ zz= """or triple double quotes
 for i in s[2:12:2]: # we can use slicing to start:stop-before:step through the collection
     print(i)
 # the code block ends when we no longer indent the code
+
+# there are two further collections in regular use in Python
+# list and tuple
+# a list is an ordinal mutable collection of any data type
+l = [5,4,3,'hello', True, x, 8.23242] # the square brackets indicate we are dealing with a list
+print(l, type(l))
+# we may use slicing
+print(l[3:6])
+# we may alter the list (mutate the list)
+l[0] = 99
+l.append(-6.5)
+l.insert(4, False)
+print(l)
+
+# tuple is the same as list except we may not mutate the members of the collection
+# the round brackets indicate a tuple
+t = (6,5,4,2,55.5, x, l, True) # an immutable ordinal collection of any data type
+print( t, type(t), t[3:6] )
+
+# we may iterate over any ordinal collection
