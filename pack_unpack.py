@@ -18,4 +18,8 @@ if __name__ == '__main__':
     print(r, type(r))
     s = unpackData(r)
     print(s)
+    # we may also unpack a tuple
+    t = (45, 'problem', False)
+    s = unpackData(t)
+    print(s)
 
