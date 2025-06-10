@@ -20,11 +20,11 @@ Tuesday
 - print() and input()
 - maths operators and data types
 - indentation
-- immutable strings
+> immutable strings
 - lists and tuples (and memory efficiency)
-- identifiers
-- boolean True and False
-- type and type conversion
+> identifiers
+> boolean True and False
+> type and type conversion
 - the if statement for conditional logic
 - for, while, break and pass
 - print formatting
