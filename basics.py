@@ -29,7 +29,16 @@ print( f'{h} {t}' ) # we may inject variables into a formatted string using {}
 # Quotation marks
 x = 'we may use single quotes'
 y = "or we may use double - (Python istelf does not care)"
+# we often use the triple quortes for docstring (__doc__)
 z = '''we can even use triple quotes
 which alow new lines witbin a string'''
 zz= """or triple double quotes 
 - really Python does not care"""
+
+# code structures
+# for-loop, and conditions 'if'
+# we use colon : to indicate the start of a code block
+# for i in s: # the iterator is commonly called 'i' or '_'
+for i in s[2:12:2]: # we can use slicing to start:stop-before:step through the collection
+
+# the code block ends when we no longer indent the code
