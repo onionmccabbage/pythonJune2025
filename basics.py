@@ -20,3 +20,16 @@ s = 'here is some text'
 # We can grab any member of an ordinal collection using 'slicing'
 print( s[6] ) # 's'
 print( s[2:9] ) # [start:stop-before]
+
+# challenge....
+h=s[0:4]
+t=s[13:] # defaults to the end
+print( f'{h} {t}' ) # we may inject variables into a formatted string using {}
+
+# Quotation marks
+x = 'we may use single quotes'
+y = "or we may use double - (Python istelf does not care)"
+z = '''we can even use triple quotes
+which alow new lines witbin a string'''
+zz= """or triple double quotes 
+- really Python does not care"""
