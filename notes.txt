@@ -15,8 +15,8 @@ All my code will be here:
 
 Tuesday
 > Welcome and intros
-- where to write code: module (just a file) or immediate python
-- architecture, structure, and professional code best practice
+> where to write code: module (just a file) or immediate python
+> architecture, structure, and professional code best practice
 > print() and input()
 > maths operators and data types
 > indentation
@@ -30,16 +30,17 @@ Tuesday
 > print formatting
 > validate input (remember - all input is string)
 > after lunch review exercise
-q convert Py to executable
 > dictionaries (indexed iterable collections)
 > import, libraries and modules
   to see what libraries are already installed: pip list
 > functions
+> packages (sinple a folder containing python files)
 
 Wednesday
 - how to access course recordings
 - quick review of where we got to
-- if __name__ == '__main__'
+q convert Py to executable
+> if __name__ == '__main__'
 - range, generators
 - comprehensions
 - to add libraries to python:

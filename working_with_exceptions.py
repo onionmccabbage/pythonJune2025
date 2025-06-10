@@ -1,6 +1,10 @@
 # Things can go wrong in code, and Python will try 
 # to handle run-time problems using 'exception' types
 
+
+
+
+
 if __name__ == '__main__':
     try:
         # here we deliberately raise an exception
