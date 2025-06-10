@@ -31,10 +31,10 @@ Tuesday
 > validate input (remember - all input is string)
 > after lunch review exercise
 q convert Py to executable
-- dictionaries (indexed iterable collections)
-- import, libraries and modules
+> dictionaries (indexed iterable collections)
+> import, libraries and modules
   to see what libraries are already installed: pip list
-- functions
+> functions
 
 Wednesday
 - how to access course recordings
