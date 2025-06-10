@@ -11,7 +11,7 @@ while True: # keep going!!
     # conditionally act on the guess
     if guess == -2: # do they want a clue
         # odd or even
-        if target//2 == target /2:
+        if target//2 == target/2:
              print('Even')
         else:
              print('Odd')

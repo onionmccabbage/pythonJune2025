@@ -26,10 +26,10 @@ Tuesday
 > boolean True and False
 > type and type conversion
 > the if statement for conditional logic
-- for, while, break and pass
+> for, while, break and pass
 > print formatting
 > validate input (remember - all input is string)
-- after lunch review exercise
+> after lunch review exercise
 q convert Py to executable
 - dictionaries (non-numeric indexed iterable collections)
 - import, libraries and modules
