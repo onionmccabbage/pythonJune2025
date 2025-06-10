@@ -40,5 +40,5 @@ zz= """or triple double quotes
 # we use colon : to indicate the start of a code block
 # for i in s: # the iterator is commonly called 'i' or '_'
 for i in s[2:12:2]: # we can use slicing to start:stop-before:step through the collection
-
+    print(i)
 # the code block ends when we no longer indent the code
