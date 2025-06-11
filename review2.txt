@@ -1,4 +1,4 @@
-Python Review 2
+Python Review 2 1hr 20 until 2:35
 ===============
 Ask the user for a category (and also for an id)
 Use these to make a call to an API and show the results
@@ -14,7 +14,7 @@ Details:
 Write a new module which asks the user for a 'category' 
 (remember to use input() which always returns a string)
 Validate the user input as follows:
-- The category may only be one of 'users', 'albums', 'todos' or 'photos'
+- The category may only be one of 'users', 'posts', 'todos' or 'photos'
   (maybe use the 'in' operator to see if the value is in a tuple of permitted values)
 
 Also ask the user to enter an id
