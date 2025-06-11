@@ -13,11 +13,13 @@ def getData(n): # whichever value is passed in will be 'n'
 
 def prettyData(struct):
     '''receive a 'user' dictionary and create a pretty string to print
-    we will pick out name, city and phone'''
+    we will pick out name, city, phone and website'''
     n = struct['name']
-    c = struct['city']
+    c = struct['address']['city'] # access the city within the address
     p = struct['phone']
-    result = f'{n} lives in {c} contact: {p}'
+    w = struct['website']
+    result = f'{n} lives in {c} contact: {p} {w}'
+    return result
 
 
 def askUser():
