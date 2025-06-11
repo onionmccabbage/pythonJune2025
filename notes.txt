@@ -37,9 +37,13 @@ Tuesday
 > packages (sinple a folder containing python files)
 
 Wednesday
-- how to access course recordings
+> how to access course recordings
+  https://sites.neueda.com/lm_ericsson_programming_in_python/site/index.html
 - quick review of where we got to
-q convert Py to executable
+> convert Py to executable
+   https://www.datacamp.com/tutorial/two-simple-methods-to-convert-a-python-file-to-an-exe-file
+> Python 2 was retured in 2020
+> continue to run Py 2 but it is quite different to Py 3
 > if __name__ == '__main__'
 - range, generators
 - comprehensions
@@ -79,11 +83,8 @@ Thursday
  
 
 - where to go from here:
-  https://python.land
   https://learnpython.org/
   https://pynative.com/python-exercises-with-solutions/
+  https://python.land
 
-
-Links
 - Python official site https://python.org
-- PEP8 style guide https://www.python.org/dev/peps/pep-0008/H

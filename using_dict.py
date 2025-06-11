@@ -24,6 +24,12 @@ print(equip, type(equip))
 for (k, v) in equip.items():
     print(f'value of {k} is {v}')
 
+for i in equip.keys():
+    print(f'key is {i}')
+
+for i in equip.values():
+    print(f'value is {i}')
+
 # also there is a 'set' data-type
 s = {4,2,3,2,6,7,8} # a mutable non-ordinal collectino of unique values of any data type
 s.add(9)
