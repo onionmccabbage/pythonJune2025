@@ -12,9 +12,16 @@ def getData(n): # whichever value is passed in will be 'n'
     return data # NB the requests library will automatically convert the JSON into a Python structure
 
 def askUser():
-    pass
+    '''ask the user for which ID'''
+    id_str = input('Which user? ')
+    if id_str.isnumeric(): # check it is a number
+        id = int(float(id_str))
+    else:
+        id=1 # choose a sensible default
+    return id
 
 if __name__ == '__main__':
     # we may exercise our code here
-    d = getData(1) # here we pass 1 as an argument
+    whichUser = askUser()
+    d = getData(whichUser) # here we pass 1 as an argument
     print(d, type(d))
