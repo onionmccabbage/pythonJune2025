@@ -45,17 +45,17 @@ Wednesday
 > Python 2 was retured in 2020
 > continue to run Py 2 but it is quite different to Py 3
 > if __name__ == '__main__'
-- range, generators
-- comprehensions
-- to add libraries to python:
+> range, generators
+> comprehensions
+> to add libraries to python:
   - python -m ensurepip
   - python –m pip install requests (or any other library you need)
   or 
   - pip3 install requests
-- using requests (to access web API via HTTP)
+> using requests (to access web API via HTTP)
 - strings with triple quotes
 - exception handling (try-except etc.)
-- debug tools   
+> debug tools   
 - review exercise
 - File input and output
 - the nature of file access objects

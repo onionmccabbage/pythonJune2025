@@ -1,6 +1,8 @@
 # the requests library lets us access API data over HTTP(s)
 # NB we may need to pip install requests
 import requests #  this can retrieve JSON, xml, text, html.....
+import sys # this gives us acess to the system on which Python is running
+
 
 # if we choose to, we can provide sensible defaults for function arguments
 def getData(n=1): # whichever value is passed in will be 'n'
@@ -23,17 +25,21 @@ def prettyData(struct):
     return result
 
 def askUser():
-    '''ask the user for which ID'''
-    id_str = input('Which user? ')
-    if id_str.isnumeric(): # check it is a number
-        id = int(float(id_str))
+    '''ask the user for which ID
+    or use a system argument'''
+    if len(sys.argv) > 1:
+        id = int(float(sys.argv[1])) # all system argument variables are strings
     else:
-        id=1 # choose a sensible default
+        id_str = input('Which user? ')
+        if id_str.isnumeric(): # check it is a number
+            id = int(float(id_str))
+        else:
+            id=1 # choose a sensible default
     return id
 
 if __name__ == '__main__':
     # we may exercise our code here
-    whichUser = askUser()
+    whichUser = askUser() # CAREFUL - there will rarely be a user sitting at a terminal to type anything!!!!
     d = getData(whichUser) # here we pass 1 as an argument
     p = prettyData(d) # pass the entire structure into the function
     print(p)
