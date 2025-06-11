@@ -2,7 +2,8 @@
 # NB we may need to pip install requests
 import requests #  this can retrieve JSON, xml, text, html.....
 
-def getData(n): # whichever value is passed in will be 'n'
+# if we choose to, we can provide sensible defaults for function arguments
+def getData(n=1): # whichever value is passed in will be 'n'
     '''use the requests library to make a call to an API end-point
     When the JSON data is retrieved, show it in the console'''
     # first make a request to an API end-point
@@ -20,7 +21,6 @@ def prettyData(struct):
     w = struct['website']
     result = f'{n} lives in {c} contact: {p} {w}'
     return result
-
 
 def askUser():
     '''ask the user for which ID'''
