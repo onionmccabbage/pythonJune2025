@@ -5,6 +5,7 @@ def readFileData():
     fin = open('my_log.txt', 'r') # 'r' will read from the file. Default is text
     with fin:
         retrieved = fin.read() # read the entire file
+    return retrieved
 
 if __name__ == '__main__':
     r = readFileData()
