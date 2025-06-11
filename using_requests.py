@@ -11,6 +11,15 @@ def getData(n): # whichever value is passed in will be 'n'
     data = response.json() # this will extract any JSON from the response object
     return data # NB the requests library will automatically convert the JSON into a Python structure
 
+def prettyData(struct):
+    '''receive a 'user' dictionary and create a pretty string to print
+    we will pick out name, city and phone'''
+    n = struct['name']
+    c = struct['city']
+    p = struct['phone']
+    result = f'{n} lives in {c} contact: {p}'
+
+
 def askUser():
     '''ask the user for which ID'''
     id_str = input('Which user? ')
@@ -24,4 +33,6 @@ if __name__ == '__main__':
     # we may exercise our code here
     whichUser = askUser()
     d = getData(whichUser) # here we pass 1 as an argument
+    p = prettyData(d) # pass the entire structure into the function
+    print(p)
     print(d, type(d))
