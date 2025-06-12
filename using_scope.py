@@ -2,6 +2,9 @@
 
 g = 'this is in the global scope'
 
+# NB in Python there is no mechanism for 'constant' or for 'static'
+# we do have immutable structures such as string or a tuple
+
 def fn():
     # we may choose to bnring a global scope variable into a local function
     global g # now any reference ot g within this scope will acces the global variable
