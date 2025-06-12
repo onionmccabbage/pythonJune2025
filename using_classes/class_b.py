@@ -49,6 +49,10 @@ class Snapshot(Photo):
     def __str__(self):
         '''__str__ will override the default 'print' mechanism'''
         return f'{self.title} has id {self.id} flash: {self.flash}'
+    def __repr__(self):
+        '''__repr___ us used in immediate mode Python to represent this class'''
+        return f' id {self.id} is {self.title} (flash: {self.flash})'
+
         
 if __name__ == '__main__':
     p1 = Photo(2, 'view of Genoa')
