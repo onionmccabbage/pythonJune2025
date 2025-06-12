@@ -26,7 +26,7 @@ class Photo(): # we may choose to include ()
         else:
             raise TypeError('title must be a non-empty string')
 
-# extend our snapshot class, examine Python inheritsance chains, see __str__ method     
+# extend our snapshot class, examine Python inheritance chains, see __str__ method     
 
 # class inheritance. If we wish we can use one class to build another class
 class Snapshot(Photo):
@@ -45,10 +45,13 @@ class Snapshot(Photo):
         if type(new_flash) == bool:
             self.__flash = new_flash
         else:
-            raise TypeError('Flash ,ust be boolean True or False')
+            raise TypeError('Flash must be boolean True or False')
+    def __str__(self):
+        '''__str__ will override the default 'print' mechanism'''
+        return f'{self.title} has id {self.id} flash: {self.flash}'
         
 if __name__ == '__main__':
     p1 = Photo(2, 'view of Genoa')
     # p2 = Photo(-2, 'view of Galway Bay') # should throw a type error
-    s1 = Snapshot(4, 'Beutiful Hemel') # remember -this calls the __init__ method
-    print(f'{s1.title} has id {s1.id}')
+    s1 = Snapshot(4, 'Beutiful Hemel', True) # remember -this calls the __init__ method
+    print(s1) # this will use the __str__ method

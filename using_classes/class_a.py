@@ -39,7 +39,8 @@ class Person:
     def aniversary(self):
         '''call this method when someones age increases by one'''
         self.__age += 1
-
+    def __str__(self):
+        return f'{self.name} is {self.age} years old'
 # question: how is garbage collection managed in Python
 
 if __name__ == '__main__':
@@ -53,3 +54,5 @@ if __name__ == '__main__':
     # gert.age = -52
     print(f'{gert.name} is aged {gert.age}') # here we call teh getter functions to access the data
     print(f'{fred.name} is aged {fred.age}')
+    # make use of the __str__ method
+    print(fred, gert)
