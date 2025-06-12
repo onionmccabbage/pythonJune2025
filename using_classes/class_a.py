@@ -8,9 +8,11 @@
 # __slots__
 
 class Person:
+    # if we wish we may restrict the mangled properties that are permitted
+    __slots__ = ['__name', '__age']
     # note: all functions within a class take 'self' as a property
     def __init__(self, name, age): # we may choose to pass in any proerties
-        self.name = name # this line actually calls teh name setter function
+        self.name = name # this line actually calls the name setter function
         self.age  = age
     @property # the accessor or getter function
     def name(self):
@@ -24,13 +26,30 @@ class Person:
             self.__name = new_name # accept the new value
         else:
             raise TypeError # raise an exception
+    @property
+    def age(self):
+        return self.__age
+    @age.setter
+    def age(self, new_age):
+        # validate age to be a positive number
+        if type(new_age) in (int, float) and new_age >=0:
+            self.__age = new_age
+        else:
+            self.__age = 32 # we choose to set a sensible default
+    def aniversary(self):
+        '''call this method when someones age increases by one'''
+        self.__age += 1
 
 # question: how is garbage collection managed in Python
 
 if __name__ == '__main__':
     gert = Person('Gertrude', 52) # here we create an instance of our class
-    fred = Person('Freda', 42)
+    gert.aniversary() # call the method of the class
+    fred = Person('Freda', -99)
     # we may assign any arbitrary data to this instance
-    # gert.name = 'Gertrude'
+    # One reason for writing setter methods is to validate changes to our data
+    gert.name = 'Gerty' # mutate the value by calling the nae setter function
+    # gert.__name = 'oops' # this does NOT alter the mutate property within the class
     # gert.age = -52
-    print(f'{gert.name} is aged {gert.age}')
+    print(f'{gert.name} is aged {gert.age}') # here we call teh getter functions to access the data
+    print(f'{fred.name} is aged {fred.age}')
