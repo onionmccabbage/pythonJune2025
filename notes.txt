@@ -21,7 +21,7 @@ Tuesday
 > maths operators and data types
 > indentation
 > immutable strings
-- lists and tuples (and memory efficiency)
+> lists and tuples (and memory efficiency)
 > identifiers
 > boolean True and False
 > type and type conversion
@@ -60,27 +60,28 @@ Wednesday
 > the nature of file access objects
 
 Thursday
-- quick review of where we got to
-- in Python EVERTHING is an Object - every function, every class every module....
+> quick review of where we got to
+> in Python EVERTHING is an Object - every function, every class every module....
 - any input or output is necessarily slow: I/O bound
-- anything with __nnn__ is part of python (built in features) called 'dunder'
-- functions live in classes, which live in modules which live in packages
+> anything with __nnn__ is part of python (built in features) called 'dunder'
+> functions live in classes, which live in modules which live in packages
 - custom generator and yield
 - global and local scope 
-- data modelling structures: 
+> data modelling structures: 
     use built in structures until they do not suit the purpose (then use classes)
-- Objects and Classes (OOP)
+> Objects and Classes (OOP)
   classes have properties (something belonging to the class) and methods (something the class can do)
-- get/set as property decorators @property
-- name mangling (__) and __slots__
-- properties, methods, __str__
-- inheritance
-- we have no direct control over memory management in Python
+> get/set as property decorators @property
+> name mangling (__) and __slots__
+> properties, methods, __str__
+> inheritance
+> we have no direct control over memory management in Python
   - we may choose efficient structures - e.g. always use a tuple unless you MUST use a list
   - we can remember to close file access (or use 'with')
   - we can reduce global objects (write as much code as possible within code blocks suchas functions or classes)
-- review exercise
+> review exercise
 - end of course feedback
+  https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LD_ADHOC_MELA_1588&OID=518358&Title=Programming%20in%20Python&Owner=Randhir%20Ram
 
 
  
