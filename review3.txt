@@ -1,0 +1,66 @@
+Python Review 3
+===============
+- Alter these instructions to suit your thinking
+- Aim for good architecture (maybe use separate modules, remember 'if __name__...')
+- Look online, talk to each other, ask me etc.
+- There will be an opportunity to share your code
+
+Write a 'Weather' class with get/set methods for:
+  'city', 'tempeature' and 'description'
+(remember - you will also need __init__)
+
+Your class should validate:
+  - the value for 'city' is a non-empty string of three or more characters 
+    (e.g. if type(city)== str and len(city)>2:)
+  - if city is missing or unacceptable, you should provide a sensible default 
+    (e.g. 'Genoa')
+  - 'temperature' needs to be a numeric value between -70 and 90
+  - 'description' must be a string, but is may be an empty string
+  - decide if you will raise a TypeError or set a default for descriptino and temeprature 
+
+If you like, in your Weather class override __str__ so the class prints nicely,
+something like 'The weather in Athlone is cloudy'
+
+Exercise the code by making an instance of your Weather class with suitable values
+
+If Time
+-------
+Print the values from the weather instance to a text file 
+You could include a timestamp in this text file (use datetime)
+Also provide a mechanism to read back the weather reports from the text file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Optional
+--------
+Use the 'requests' library to get data from
+  https://api.openweathermap.org/data/2.5/weather?q=athlone&units=metric&APPID=48f2d5e18b0d2bc50519b58cce6409f1
+  (this ID will work up to 60 requests a minute)
+  Replace Athlone with any city name
+When the response comes back, populate an instance of your Weather class
+For this API JSON data, the description will be
+  response_dict['weather'][0]['description']
+Write try-except blocks around some of your code (e.g. the api access)
+
+Pass in the 'city' value as a parameter for the API URL
+  f'https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&APPID=48f2d5e18b0d2bc50519b58cce6409f1'
+The 'city' could be a sys.argv or user input value, but always provide a default
+
+Use the returned data to populate values for temperature in your Weather instance
+The temperature value will be
+  response_dict['main']['temp'] (show other data if you wish)
