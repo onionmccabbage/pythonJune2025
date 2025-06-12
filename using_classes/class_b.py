@@ -25,16 +25,30 @@ class Photo(): # we may choose to include ()
             self.__title= new_title
         else:
             raise TypeError('title must be a non-empty string')
-        
+
+# extend our snapshot class, examine Python inheritsance chains, see __str__ method     
 
 # class inheritance. If we wish we can use one class to build another class
 class Snapshot(Photo):
-    '''Snapshot inherits everything fro mthe Photo class
-    We can the nadd our own additional features
+    '''Snapshot inherits everything from the Photo class
+    We can then add our own additional features
     - flash indicator True or False'''
+    def __init__(self, id, title, flash): # __init__ is called every time we make an instance
+        super().__init__(id, title)
+        self.flash = flash
+    @property
+    def flash(self):
+        return self.__flash
+    @flash.setter
+    def flash(self, new_flash):
+        # validateh flash is a boolean (True or False)
+        if type(new_flash) == bool:
+            self.__flash = new_flash
+        else:
+            raise TypeError('Flash ,ust be boolean True or False')
         
 if __name__ == '__main__':
     p1 = Photo(2, 'view of Genoa')
     # p2 = Photo(-2, 'view of Galway Bay') # should throw a type error
-    s1 = Snapshot(4, 'Beutiful Hemel')
+    s1 = Snapshot(4, 'Beutiful Hemel') # remember -this calls the __init__ method
     print(f'{s1.title} has id {s1.id}')

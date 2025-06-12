@@ -75,6 +75,10 @@ Thursday
 - name mangling (__) and __slots__
 - properties, methods, __str__
 - inheritance
+- we have no direct control over memory management in Python
+  - we may choose efficient structures - e.g. always use a tuple unless you MUST use a list
+  - we can remember to close file access (or use 'with')
+  - we can reduce global objects (write as much code as possible within code blocks suchas functions or classes)
 - review exercise
 - end of course feedback
 
