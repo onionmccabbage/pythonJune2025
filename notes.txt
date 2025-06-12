@@ -39,7 +39,6 @@ Tuesday
 Wednesday
 > how to access course recordings
   https://sites.neueda.com/lm_ericsson_programming_in_python/site/index.html
-- quick review of where we got to
 > convert Py to executable
    https://www.datacamp.com/tutorial/two-simple-methods-to-convert-a-python-file-to-an-exe-file
 > Python 2 was retured in 2020
@@ -53,19 +52,19 @@ Wednesday
   or 
   - pip3 install requests
 > using requests (to access web API via HTTP)
-- strings with triple quotes
-- exception handling (try-except etc.)
+> strings with triple quotes
+> exception handling (try-except etc.)
 > debug tools   
 > review exercise
-- File input and output
-- the nature of file access objects
+> File input and output
+> the nature of file access objects
 
 Thursday
+- quick review of where we got to
 - in Python EVERTHING is an Object - every function, every class every module....
 - any input or output is necessarily slow: I/O bound
 - anything with __nnn__ is part of python (built in features) called 'dunder'
 - functions live in classes, which live in modules which live in packages
-- PEP8 style guide https://pep8.org/
 - custom generator and yield
 - global and local scope 
 - data modelling structures: 
@@ -88,3 +87,4 @@ Thursday
   https://python.land
 
 - Python official site https://python.org
+- PEP8 style guide https://pep8.org/
